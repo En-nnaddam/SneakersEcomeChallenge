@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- ================ Navigation ================= -->
+  <header class="header">
+    <img class="header__menu" src="./images/icon-menu.svg" alt="menu">
+    <div class="header__logo">
+      Sneakers
+    </div>
+    <nav class="header__navigation">
+      <img class="header__navigation__close" src="./images/icon-close-dark.svg" alt="close">
+      <a href="#">Collection</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="header__cart">
+      <img src="./images/icon-cart.svg" alt="cart">
+    </div>
+    <div class="header__profile">
+      <img src="./images/image-avatar.png" alt="avatar">
+    </div>
+  </header>
+
+  <main class="product">
+    <div class="product__images">
+      <img class="product__poster" src="./images/image-product-1.jpg" alt="poster">
+      <div class="product__images__field">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="product">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="product">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="product">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="product">
+      </div>
+    </div>
+    <div class="product__infos">
+      <small class="product__infos__company">Sneaker Company</small>
+      <h1 class="product__infos__title">Fall Limited Edition Sneakers</h1>
+      <p class="product__infos__description">These low-profile sneakers are your perfect casual wear companion.
+        featuring a durable rubber outer sole.
+        they'll withstand everything the weather can offer.</p>
+
+      <h2 class="product__infos__price">$125.00 <span>50%</span></h2>
+      <h5 class="product__infos__old-price">$250.00</h5>
+      <div class="product__infos__buy">
+        <div class="product__infos__buy__quantity">
+          <button class="minus">-</button>
+          <input id="product__quantity" type="text" value="0" readonly>
+          <button class="plus">+</button>
+        </div>
+        <button class="product__infos__buy__to-cart">
+          <img src="./images/icon-cart-white.svg" alt="cart">
+          <span>Add to cart</span>
+        </button>
+      </div>
+    </div>
+    <div id="image-closely-field">
+      <div class="product__images">
+        <div class="product__poster">
+          <img id="image-closely-field__close" src="./images/icon-close.svg" alt="close">
+          <img id="image-closely-field__previous" src="./images/icon-previous.svg" alt="previous">
+          <img id="image-closely-field__next" src="./images/icon-next.svg" alt="next">
+          <img class="poster" src="./images/image-product-1.jpg" alt="poster">
+        </div>
+        <div class="product__images__field">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="product">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="product">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="product">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="product">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
