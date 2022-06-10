@@ -75,10 +75,9 @@ function removeActiveClassFromArray(elements) {
 
 function setPoster(image, poster) {
     image.classList.add('active')
-    const extension = image.src.split('.')[1]
     let arr = image.src.split('-')
     arr = arr.slice(0, arr.length - 1)
-    const source = `${arr.join('-')}.${extension}`
+    const source = `${arr.join('-')}.jpg`
 
     poster.src = source
 }
